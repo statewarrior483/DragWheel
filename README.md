@@ -25,7 +25,34 @@ Requires **macOS 13 (Ventura) or later**.
 
 ---
 
-## Installation
+## Download
+
+The easiest way to install DragWheel is to download it from the [Releases](../../releases) page.
+
+1. Download **DragWheel-x.x.dmg** from the latest release.
+2. Open the DMG and drag **DragWheel** into the **Applications** folder.
+3. Open DragWheel from Applications.
+
+> A **.pkg** installer is also available on the Releases page if you prefer a click-through installer. It puts DragWheel in Applications for you.
+
+### "DragWheel can't be opened" / "Apple could not verify…"
+
+DragWheel isn't signed with a paid Apple Developer ID, so macOS blocks it the first time. To open it:
+
+1. Try to open DragWheel once and close the warning.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll down to the message about DragWheel and click **Open Anyway**.
+4. Confirm with your password or Touch ID.
+
+You only need to do this once.
+
+> The downloaded app is built for one chip type (Apple Silicon or Intel), noted in the release. If it won't run on your Mac, build it from source below.
+
+After installing, set up the [helper tools](#helper-tools-optional-but-recommended) to unlock every conversion.
+
+---
+
+## Build from source
 
 ### 1. Install Xcode Command Line Tools
 
@@ -158,6 +185,19 @@ After changing the code or pulling new changes, rebuild:
 ```
 
 macOS may ask for the Finder permission again after a rebuild. This is normal for locally built apps.
+
+## Packaging a release
+
+To create a DMG and PKG for the Releases page:
+
+```bash
+chmod +x package.sh
+./package.sh
+```
+
+This builds the app and writes `DragWheel-<version>.dmg` and `DragWheel-<version>.pkg` into the `dist/` folder. The version number comes from `CFBundleShortVersionString` in `Resources/Info.plist`, so update that before each release.
+
+Upload both files to a new GitHub release (**Releases → Draft a new release**). Don't commit `dist/` or `build/` to the repo.
 
 ## Uninstalling
 
