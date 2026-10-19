@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>DragWheel</string>
+    <key>CFBundleDisplayName</key><string>DragWheel</string>
+    <key>CFBundleIdentifier</key><string>app.dragwheel.DragWheel</string>
+    <key>CFBundleExecutable</key><string>DragWheel</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>13.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>DragWheel asks Finder to place each converted file right next to the original.</string>
+    <key>NSDesktopFolderUsageDescription</key>
+    <string>DragWheel saves converted files next to the originals on your Desktop.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>DragWheel saves converted files next to the originals in Documents.</string>
+    <key>NSDownloadsFolderUsageDescription</key>
+    <string>DragWheel saves converted files next to the originals in Downloads.</string>
+    <key>NSRemovableVolumesUsageDescription</key>
+    <string>DragWheel saves converted files next to the originals on external drives.</string>
+    <key>NSNetworkVolumesUsageDescription</key>
+    <string>DragWheel saves converted files next to the originals on network drives.</string>
+</dict>
+</plist>
