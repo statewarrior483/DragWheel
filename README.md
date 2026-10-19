@@ -67,7 +67,7 @@ xcode-select --install
 Download the ZIP from GitHub (green **Code** button → **Download ZIP**) and unzip it, or clone it:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/DragWheel.git
+git clone https://github.com/statewarrior483/DragWheel.git
 ```
 
 ### 3. Build and install
